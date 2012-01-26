@@ -11,26 +11,35 @@ It uses Mozilla's [Rhino engine](https://github.com/matthieu/rhymeno) to execute
 ## Usage
 
 To add eco template files to your grails project:
-* Install the plugin - I have yet to add it to the Plugin Portal
+
+* Install the plugin ( I have yet to add it to the Plugin Portal )
+* Actually add the eco tempalte files to your project. I placed mine adjacent to the js folder in eco.
 * Reference your eco files in your ApplicationResources file (or where ever your defining your resources)
 
 Example
+<pre>
   eco {
     resource url: 'eco/dir.eco'
     resource url: 'eco/entry.eco'
     resource url: 'eco/category.eco'
   }  
+</pre>
 
 The above example will create a resource you can include in pages or have another resource depend on. The templates 
 are converted into javascript objects in the Global name space. The naming of these js objects follows the pattern "eco.$fileName"
 where the filename does not include the extension.
 
 Example eco tempate people.eco
-  <ul>
-    <% for person in @people: %>
-      <li><%= person.name %></li>      
-    <% end %>
-  </ul>
+
+<pre>
+  &lt;ul&gt;
+    &lt;% for person in @people: %&gt;
+      &lt;li&gt; &lt;%= person.name %&gt;&lt;/li&gt;      
+    &lt;% end %&gt;
+  &lt;/ul&gt;
+</pre>
 
 which would be referenced in your javascript code as:
+<pre>
   eco.people([person:{ name: 'John' }])
+</pre>
