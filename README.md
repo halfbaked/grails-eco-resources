@@ -41,5 +41,5 @@ Example eco tempate people.eco
 
 which would be referenced in your javascript code as:
 <pre>
-  eco.people([person:{ name: 'John' }])
+  $("li").html( eco.people( { people: [{ name: 'John' }, { name: 'Mary'}] } ) );
 </pre>
