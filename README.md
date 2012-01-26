@@ -39,7 +39,7 @@ Example eco tempate people.eco
   &lt;/ul&gt;
 </pre>
 
-which would be referenced in your javascript code as:
+which could be referenced in your javascript code like this:
 <pre>
   $("li").html( eco.people( { people: [{ name: 'John' }, { name: 'Mary'}] } ) );
 </pre>
