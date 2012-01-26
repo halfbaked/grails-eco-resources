@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="Eamonns-iMac.local" id="0" name="EcoEngineTests" package="com.saasplex.eco" tests="1" time="1.801" timestamp="2012-01-26T11:21:15">
+      <properties />
+
+      <testcase classname="com.saasplex.eco.EcoEngineTests" name="testCompile" time="1.791" />
+
+      <system-out><![CDATA[--Output from testCompile--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testCompile--
+]]></system-err>
+
+  </testsuite>
+</testsuites>
