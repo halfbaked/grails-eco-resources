@@ -9,9 +9,7 @@ class EcoEngineTests extends grails.test.GrailsUnitTestCase {
   def ecoEngine
 
   void setUp(){
-    def ecoJsPath = ApplicationHolder.application.parentContext.servletContext.getRealPath("/js/eco.js")
-    def coffeeScriptJsPath = ApplicationHolder.application.parentContext.servletContext.getRealPath("/js/coffee-script-1.1.js")
-    ecoEngine = new EcoEngine([ecoJsPath:ecoJsPath, coffeeScriptJsPath:coffeeScriptJsPath])  
+    ecoEngine = new EcoEngine()  
   }
 
   void testCompile(){
