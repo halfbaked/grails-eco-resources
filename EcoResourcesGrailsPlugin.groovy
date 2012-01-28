@@ -16,7 +16,7 @@ class EcoResourcesGrailsPlugin {
 
     def title = "Eco Resources Plugin" // Headline display name of the plugin
     def author = "Eamonn O'Connell"
-    def authorEmail = "twitter:34m0"
+    def authorEmail = "twitter:@34m0"
     def description = '''\
 Compiles Eco templates to Javascript
 From Sam Stephenson, Eco templates let you use Coffeescript logic in your Markup. They are a great way to define UI layout in a dynamic single page app.

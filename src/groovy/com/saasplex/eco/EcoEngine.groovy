@@ -12,20 +12,19 @@ import org.springframework.core.io.ClassPathResource
 
 
 // Eco engine uses Mozilla Rhino to compile the Eco template
-// using existing javascript compilers
+// using existing javascript in-browser compiler
 class EcoEngine {
 
   def Scriptable globalScope
   def ClassLoader classLoader
-  def COMPILERS_DIR = 'js'
 
   def EcoEngine(){
     try {
       classLoader = getClass().getClassLoader()
       def ecoJsResource = (new ClassPathResource('com/saasplex/eco/eco.js', getClass().classLoader))
-      assert ecoJsResource.exists() : "EcoJs resource not found at $opts.ecoJsPath"    
+      assert ecoJsResource.exists() : "EcoJs resource not found"    
       // coffee-script-1.2 doesn't seem to compile in Rhino, so using coffee-script-1.1
-      def coffeeScriptJsResource = (new ClassPathResource('com/saasplex/eco/coffee-script-1.1.js', getClass().classLoader))
+      def coffeeScriptJsResource = (new ClassPathResource('com/saasplex/eco/coffee-script-1.2.js', getClass().classLoader))
       assert coffeeScriptJsResource.exists() : "CoffeeScriptJs resource not found"
 
       def ecoJsStream = ecoJsResource.inputStream

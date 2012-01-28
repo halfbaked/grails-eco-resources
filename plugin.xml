@@ -1,0 +1,35 @@
+<plugin name='eco-resources' version='0.1' grailsVersion='2.0 &gt; *'>
+  <author>Eamonn O'Connell</author>
+  <authorEmail>twitter:34m0</authorEmail>
+  <title>Eco Resources Plugin</title>
+  <description>Compiles Eco templates to Javascript
+From Sam Stephenson, Eco templates let you use Coffeescript logic in your Markup. They are a great way to define UI layout in a dynamic single page app.
+See: https://github.com/sstephenson/eco
+</description>
+  <documentation>https://github.com/halfbaked/grails-eco-resources</documentation>
+  <type>EcoResourcesGrailsPlugin</type>
+  <resources>
+    <resource>EcoResourceMapper</resource>
+  </resources>
+  <repositories>
+    <repository name='grailsCentral' url='http://plugins.grails.org' />
+    <repository name='http://repo.grails.org/grails/plugins' url='http://repo.grails.org/grails/plugins/' />
+    <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
+    <repository name='grailsCore' url='http://svn.codehaus.org/grails/trunk/grails-plugins' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+  </repositories>
+  <dependencies>
+    <runtime>
+      <dependency group='rhino' name='js' version='1.7R2' />
+    </runtime>
+  </dependencies>
+  <plugins>
+    <runtime>
+      <plugin group='org.grails.plugins' name='resources' version='1.1.6' />
+    </runtime>
+  </plugins>
+  <runtimePluginRequirements>
+    <plugin name='resources' version='1.0 &gt; *' />
+  </runtimePluginRequirements>
+  <behavior />
+</plugin>
