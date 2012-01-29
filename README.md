@@ -6,7 +6,7 @@ It requires the well established resources plugin.
 [Eco](https://github.com/sstephenson/eco) is yet another Javascript templating tool. Eco is written by PrototypeJs 
 author [Sam Stephenson](https://github.com/sstephenson). 
 
-It uses Mozilla's [Rhino engine](https://github.com/matthieu/rhymeno) to execute the original eco compiler written in javascript.
+It uses Mozilla's [Rhino engine](https://github.com/mozilla/rhino) to execute the original eco compiler written in javascript.
 
 ## Usage
 
