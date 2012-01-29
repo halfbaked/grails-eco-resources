@@ -12,7 +12,7 @@ It uses Mozilla's [Rhino engine](https://github.com/mozilla/rhino) to execute th
 
 To add eco template files to your grails project:
 
-* Install the plugin ( I have yet to add it to the Plugin Portal )
+* Install the plugin (adding to your BuildConfig is best)
 * Actually add the eco tempalte files to your project. I placed mine adjacent to the js folder in eco.
 * Reference your eco files in your ApplicationResources file (or where ever your defining your resources)
 
